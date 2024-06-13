@@ -1,7 +1,7 @@
 import { Client } from "pg";
 
 const client =new Client ({
-    connectionString:"postgresql://postgres:mysecretpassword@localhost/postgres"
+    connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
 })
 
 
@@ -17,6 +17,11 @@ async function createUsersTable() {
         );
     `)
     console.log(result)
+}
+
+async function insertValues (){
+    
+
 }
 
 createUsersTable();

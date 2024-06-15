@@ -19,9 +19,6 @@ async function createUsersTable() {
     console.log(result)
 }
 
-async function insertValues (){
-    
 
-}
 
 createUsersTable();

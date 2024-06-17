@@ -6,7 +6,7 @@ const client =new Client({
      connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
 })
 
-
+// select query from prisma
 try {
     await client.connect();
     const query = 'SELECT * FROM users WHERE email = $1';

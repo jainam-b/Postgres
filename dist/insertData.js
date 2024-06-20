@@ -13,7 +13,7 @@ const pg_1 = require("pg");
 function insertData(username, email, password) {
     return __awaiter(this, void 0, void 0, function* () {
         const client = new pg_1.Client({
-            connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
+            connectionString: "postgresql://my-postgres:mysecretpassword@localhost/postgres"
         });
         try {
             yield client.connect(); // Ensure client connection is established

@@ -2,7 +2,7 @@ import {Client } from "pg";
 
 async function insertData(username:string,email :string, password:string ) {
     const client =new Client ({
-        connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
+        connectionString: "postgresql://my-postgres:mysecretpassword@localhost/postgres"
     })
 
     try {

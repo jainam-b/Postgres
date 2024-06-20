@@ -1,7 +1,7 @@
 import { Client } from "pg";
 
 const client =new Client ({
-    connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
+    connectionString: "postgresql://postgres:jainam@localhost:5432/postgres"
 })
 
 

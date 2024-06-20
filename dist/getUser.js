@@ -15,6 +15,7 @@ function getuser(email) {
         const client = new pg_1.Client({
             connectionString: "postgresql://postgres:mysecretpassword@localhost/postgres"
         });
+        // select query from prisma
         try {
             yield client.connect();
             const query = 'SELECT * FROM users WHERE email = $1';
